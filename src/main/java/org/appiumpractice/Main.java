@@ -1,7 +1,5 @@
 package org.appiumpractice;
 
-import javax.sound.midi.Soundbank;
-
 public class Main {
     public static void main(String[] args) {
         SetUpDesiredCapabilities setup = new SetUpDesiredCapabilities();
@@ -10,6 +8,8 @@ public class Main {
         try {
             setup.setUpDesiredCapabilities(appActivity, appPackage);
             System.out.println("Application Started...");
+           // calculatorTests.AddingTest();
+
         } catch (Exception exp) {
             System.out.println(exp.getCause());
             System.out.println(exp.getMessage());
